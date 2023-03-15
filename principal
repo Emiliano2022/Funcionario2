@@ -1,0 +1,64 @@
+package funcionario1;
+
+public class Funcionario1 {
+
+
+    public static void main(String[] args) {
+    
+         private String nome;        
+         private int idade;
+         private String cargo;
+         private double salario;
+        private double aumentoSalario;
+
+        private int identificador;
+        private static int nFuncionario = 0;
+
+
+
+
+    public Funcionario1(String nome){
+        this.nome = nome;
+        this.identificador = ++nFuncionario;
+    }
+
+    public int getIdentificador() {
+        return this.identificador;
+    }
+
+    public Funcionario1(String nome, int idade, String cargo, double salario){
+        this.nome = nome;
+        this.idade = idade;
+        this.cargo = cargo;
+        this.salario = salario;
+    }
+}
+    
+    
+    
+ = =========================================================================================================
+ 
+ 
+ public class Registro {
+    public static void main(String[] args) {
+
+        Empresa banco = new Empresa("Banco sem Juros!");
+        banco.empregados = new Funcionario[3];
+
+        Funcionario matheus = new Funcionario("Matheus de Wit", 26, "Caixa", 1500.0);
+        matheus.dataEntrada = new Data();
+
+
+        banco.adiciona(matheus);
+
+        Funcionario adriano = new Funcionario("Adriano dos Santos", 35, "Gerente", 2000.0);
+        adriano.dataEntrada = new Data();
+
+
+        banco.adiciona(adriano);
+
+        System.out.println(matheus.getIdentificador());
+        System.out.println(adriano.getIdentificador());    
+    }
+}
+    
